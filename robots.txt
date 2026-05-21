@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://boxer-guide.github.io/sitemap.xml
