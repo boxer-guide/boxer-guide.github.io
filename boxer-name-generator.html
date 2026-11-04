@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Boxer Name Generator with a Name Card to Share | Boxer Guide</title>
+<meta name="description" content="Free Boxer name generator: shuffle boy and girl names by style, coat and first letter, then download or share a poster name card.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://boxer-guide.github.io/boxer-name-generator.html">
+<!-- social-cards:start -->
+<meta property="og:title" content="Boxer Name Generator with a Name Card to Share | Boxer Guide">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://boxer-guide.github.io/boxer-name-generator.html">
+<meta property="og:description" content="Free Boxer name generator: shuffle boy and girl names by style, coat and first letter, then download or share a poster name card.">
+<meta property="og:image" content="https://boxer-guide.github.io/assets/social-share-20261025.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="800">
+<meta property="og:image:alt" content="Fawn Boxer with white markings standing on an autumn path">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Boxer Name Generator with a Name Card to Share | Boxer Guide">
+<meta name="twitter:description" content="Free Boxer name generator: shuffle boy and girl names by style, coat and first letter, then download or share a poster name card.">
+<meta name="twitter:image" content="https://boxer-guide.github.io/assets/social-share-20261025.jpg">
+<!-- social-cards:end -->
+<link rel="preload" href="/assets/fonts/anton-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<style id="sc-bxg-design">
+/* Boxer Guide: sports-poster design system. Tokens first; every component is built from them. */
+@font-face{font-family:"Anton";font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/anton-400-latin.woff2) format("woff2")}
+@font-face{font-family:"Barlow";font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/barlow-400-latin.woff2) format("woff2")}
+@font-face{font-family:"Barlow";font-style:normal;font-weight:600;font-display:swap;src:url(/assets/fonts/barlow-600-latin.woff2) format("woff2")}
+@font-face{font-family:"Barlow";font-style:normal;font-weight:800;font-display:swap;src:url(/assets/fonts/barlow-800-latin.woff2) format("woff2")}
+:root{--bxg-red:#ff1f1f;--bxg-redink:#b3001b;--bxg-ink:#0d0d0d;--bxg-paper:#f2eee5;--bxg-chalk:#ffffff;--bxg-slate:#454545;--bxg-mist:#d9d4c7;
+--bxg-display:"Anton","Impact","Haettenschweiler","Arial Narrow Bold",sans-serif;--bxg-text:"Barlow","Helvetica Neue",Arial,sans-serif;
+--bxg-wrap:1200px;--bxg-pad:32px;--bxg-side:320px;--bxg-gap:44px;--bxg-lift:translate(-3px,-3px);--bxg-block:6px 6px 0 var(--bxg-red);
+--bxg-trim:repeating-linear-gradient(-55deg,var(--bxg-red) 0 14px,var(--bxg-ink) 14px 28px)}
+.bxg-brandline{border-left:4px solid #b3001b;padding-left:16px}
+html body{margin:0;background:var(--bxg-paper);color:var(--bxg-ink);font:400 19px/1.65 var(--bxg-text)}
+html body *,html body *::before,html body *::after{box-sizing:border-box}
+html body :is(h1,h2){font-family:var(--bxg-display);font-weight:400;letter-spacing:.005em;line-height:1.04;color:var(--bxg-ink)}
+html body :is(h3,h4){font-family:var(--bxg-text);font-weight:800;line-height:1.2;color:var(--bxg-ink)}
+html body a{color:var(--bxg-ink);text-decoration-thickness:2px;text-underline-offset:4px;text-decoration-color:var(--bxg-red)}
+html body a:hover{text-decoration-thickness:4px}
+html body :is(a,button,summary,input,select,canvas):focus-visible{outline:3px solid #0066cc;outline-offset:3px}
+.bxg-label,html body .kicker{display:inline-block;margin:0;color:var(--bxg-redink);font:800 15px/1.3 var(--bxg-text);letter-spacing:.16em;text-transform:uppercase;opacity:1}
+.bxg-btn,.bxg-btn:visited{display:inline-block;transform:skewX(-12deg);background:var(--bxg-ink);color:#fff;border:0;border-radius:0;padding:15px 30px 14px;font:800 18px/1.2 var(--bxg-text);letter-spacing:.08em;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:transform .15s,box-shadow .15s}
+.bxg-btn>span{display:inline-block;transform:skewX(12deg)}
+.bxg-btn:hover{transform:skewX(-12deg) var(--bxg-lift);box-shadow:var(--bxg-block);color:#fff;text-decoration:none}
+.bxg-btn:focus-visible{outline-offset:4px}
+.bxg-on-dark .bxg-btn,.bxg-on-dark .bxg-btn:visited{background:var(--bxg-red);color:var(--bxg-ink)}
+.bxg-on-dark .bxg-btn:hover{color:var(--bxg-ink);box-shadow:6px 6px 0 #fff}
+.bxg-on-red .bxg-btn:hover{box-shadow:6px 6px 0 #fff}
+.bxg-ghost{background:none;border:0;padding:6px 0;font:800 17px/1.3 var(--bxg-text);letter-spacing:.06em;text-transform:uppercase;color:var(--bxg-ink);text-decoration:underline;text-decoration-color:var(--bxg-red);text-decoration-thickness:2px;text-underline-offset:5px;cursor:pointer}
+.bxg-ghost:hover{text-decoration-thickness:4px}
+.bxg-skip{position:absolute;left:-999px;top:8px;background:#fff;padding:8px 12px;z-index:60}.bxg-skip:focus{left:8px}
+.bxg-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.bxg-trim{height:14px;background:var(--bxg-trim)}
+/* header: black kit bar with a striped trim */
+.bxg-bar{position:relative;z-index:30;background:var(--bxg-ink);color:#fff;border-bottom:8px solid var(--bxg-red);border-image:var(--bxg-trim) 0 0 8 0/0 0 8px 0 stretch}
+.bxg-bar-in{max-width:var(--bxg-wrap);margin:0 auto;padding:0 var(--bxg-pad);min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.bxg-logo,.bxg-logo:visited{display:inline-flex;align-items:center;gap:14px;color:#fff;text-decoration:none;font:400 34px/1 var(--bxg-display);letter-spacing:.03em;text-transform:uppercase;white-space:nowrap}
+.bxg-logo:hover{color:#fff;text-decoration:none}
+.bxg-mono{display:inline-grid;place-items:center;width:46px;height:40px;transform:skewX(-12deg);background:var(--bxg-red);color:var(--bxg-ink);font:400 22px/1 var(--bxg-display);letter-spacing:0}
+.bxg-mono b{display:block;transform:skewX(12deg);font-weight:400}
+.bxg-nav ul{display:flex;align-items:center;gap:4px;list-style:none;margin:0;padding:0}
+.bxg-nav a,.bxg-nav a:visited{display:inline-block;padding:10px 11px;color:#fff;font:800 15px/1.2 var(--bxg-text);letter-spacing:.12em;text-transform:uppercase;text-decoration:none;border-bottom:3px solid transparent}
+.bxg-nav a:hover,.bxg-nav a[aria-current="page"]{color:#fff;border-bottom-color:var(--bxg-red)}
+.bxg-nav a.bxg-nav-cta{margin-left:12px;transform:skewX(-12deg);background:var(--bxg-red);color:var(--bxg-ink);border:0;padding:11px 18px}
+.bxg-nav a.bxg-nav-cta span{display:inline-block;transform:skewX(12deg)}
+.bxg-nav a.bxg-nav-cta:hover{transform:skewX(-12deg) var(--bxg-lift);box-shadow:5px 5px 0 #fff;color:var(--bxg-ink)}
+.bxg-menu{display:none}
+.bxg-menu summary{list-style:none;cursor:pointer;transform:skewX(-12deg);background:var(--bxg-red);color:var(--bxg-ink);padding:10px 18px;font:800 16px/1.2 var(--bxg-text);letter-spacing:.14em;text-transform:uppercase}
+.bxg-menu summary span{display:inline-block;transform:skewX(12deg)}
+.bxg-menu summary::-webkit-details-marker{display:none}
+.bxg-menu[open] summary{background:#fff}
+.bxg-menu nav{position:absolute;left:0;right:0;top:100%;margin-top:8px;background:var(--bxg-ink);padding:18px var(--bxg-pad) 24px;display:grid;box-shadow:0 22px 40px rgba(0,0,0,.35)}
+.bxg-menu a.bxg-menu-main{display:flex;justify-content:space-between;align-items:center;max-width:460px;padding:14px 0;border-bottom:2px solid #333;color:#fff;font:400 32px/1.1 var(--bxg-display);text-transform:uppercase;text-decoration:none}
+.bxg-menu a.bxg-menu-main b{color:var(--bxg-red);font-weight:400}
+.bxg-menu-small{display:flex;flex-wrap:wrap;gap:4px 20px;margin-top:16px}
+.bxg-menu-small a{color:#fff;font:600 17px/1.3 var(--bxg-text);padding:6px 0}
+/* sections */
+.bxg-sec{max-width:var(--bxg-wrap);margin:0 auto;padding:84px var(--bxg-pad)}
+.bxg-sec-head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap}
+.bxg-sec h2,.bxg-sec-head h2{font-size:clamp(40px,4.4vw,66px);margin:10px 0 12px;text-transform:uppercase}
+.bxg-sec-lead{max-width:60ch;color:var(--bxg-slate);margin:0}
+.bxg-white{background:#fff;border-top:2px solid var(--bxg-ink);border-bottom:2px solid var(--bxg-ink)}
+/* home: red poster hero */
+.bxg-hero{background:var(--bxg-red);color:var(--bxg-ink);overflow:hidden}
+.bxg-hero-in{max-width:var(--bxg-wrap);margin:0 auto;padding:64px var(--bxg-pad) 72px;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:56px;align-items:center}
+.bxg-hero .bxg-label{background:var(--bxg-ink);color:#fff;padding:7px 12px 6px}
+.bxg-hero h1{margin:22px 0 22px;font-size:clamp(58px,7.2vw,112px);line-height:.92;text-transform:uppercase;color:var(--bxg-ink)}
+.bxg-hero h1 em{font-style:normal;display:inline-block;background:var(--bxg-ink);color:var(--bxg-red);padding:0 .12em;transform:skewX(-8deg)}
+.bxg-hero-lead{max-width:42ch;margin:0;font:600 22px/1.45 var(--bxg-text);color:var(--bxg-ink)}
+.bxg-actions{display:flex;flex-wrap:wrap;align-items:center;gap:18px 34px;margin-top:34px}
+.bxg-actions>a:not(.bxg-btn){font-weight:800;text-transform:uppercase;letter-spacing:.06em;text-decoration-color:var(--bxg-ink)}
+.bxg-poster{position:relative;margin:0;background:var(--bxg-ink);padding:14px 14px 0;transform:rotate(2deg)}
+.bxg-poster-img{display:block;position:relative;overflow:hidden}
+.bxg-poster img{display:block;width:100%;height:auto;filter:grayscale(1) contrast(1.18) brightness(1.04)}
+.bxg-poster-no{position:absolute;left:-30px;top:-58px;font:400 124px/1 var(--bxg-display);color:var(--bxg-paper);-webkit-text-stroke:3px var(--bxg-ink);pointer-events:none}
+.bxg-poster figcaption{display:flex;justify-content:space-between;gap:10px;padding:10px 2px 12px;color:#fff;font:600 14px/1.3 var(--bxg-text);letter-spacing:.06em;text-transform:uppercase}
+.bxg-poster figcaption b{color:var(--bxg-red);font-weight:800}
+/* line-up of jerseys */
+.bxg-jerseys{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:18px;list-style:none;margin:36px 0 0;padding:0}
+.bxg-jersey{position:relative;display:grid;justify-items:center;align-content:start;gap:6px;margin:0;padding:34px 10px 20px;background:var(--bxg-ink);color:#fff;text-align:center;clip-path:polygon(22% 0,36% 7%,64% 7%,78% 0,100% 12%,92% 34%,86% 30%,86% 100%,14% 100%,14% 30%,8% 34%,0 12%);transition:transform .15s}
+.bxg-jersey-no{font:400 58px/1 var(--bxg-display);color:var(--bxg-red)}
+.bxg-jersey strong{display:block;max-width:100%;font:400 24px/1.1 var(--bxg-display);letter-spacing:.04em;text-transform:uppercase;overflow-wrap:anywhere}
+.bxg-jersey small{font:600 13px/1.3 var(--bxg-text);letter-spacing:.1em;text-transform:uppercase;color:#cfcfcf}
+a.bxg-jersey-link{display:block;text-decoration:none;color:#fff;transition:transform .15s,filter .15s}
+a.bxg-jersey-link:hover{transform:var(--bxg-lift);filter:drop-shadow(6px 6px 0 var(--bxg-red))}
+.bxg-lineup-cta{margin:38px 0 0;display:flex;flex-wrap:wrap;align-items:center;gap:16px 30px}
+/* paths */
+.bxg-paths{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:26px;margin-top:38px}
+.bxg-path{display:flex;flex-direction:column;background:#fff;border:2px solid var(--bxg-ink);padding:26px 26px 24px;transition:transform .15s,box-shadow .15s}
+.bxg-path:hover{transform:var(--bxg-lift);box-shadow:var(--bxg-block)}
+.bxg-path svg{width:58px;height:58px}
+.bxg-path h3{margin:14px 0 8px;font:400 30px/1.05 var(--bxg-display);text-transform:uppercase}
+.bxg-path p{margin:0 0 20px;color:var(--bxg-slate)}
+.bxg-path a{margin-top:auto;font-weight:800;text-transform:uppercase;letter-spacing:.05em}
+/* scoreboard */
+.bxg-board{background:var(--bxg-ink);color:#fff}
+.bxg-board .bxg-label{color:var(--bxg-red)}
+.bxg-board h2{color:#fff}
+.bxg-board .bxg-sec-lead{color:#d6d6d6}
+.bxg-score{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin:38px 0 0;border:2px solid #3a3a3a}
+.bxg-score div{padding:28px 26px 26px;border-left:2px solid #3a3a3a}
+.bxg-score div:first-child{border-left:0}
+.bxg-score dt{font:400 112px/1 var(--bxg-display);color:var(--bxg-red);font-variant-numeric:tabular-nums}
+.bxg-score dd{margin:12px 0 0;max-width:26ch;color:#eee;font-weight:600}
+.bxg-score dd a{color:#fff}
+/* ticket-stub cards */
+.bxg-tickets{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px;margin-top:36px;counter-reset:bxg-card}
+html body .card{position:relative;display:grid;grid-template-columns:118px minmax(0,1fr);grid-template-rows:auto auto 1fr auto;margin:0;padding:0;background:#fff;border:2px solid var(--bxg-ink);border-radius:0;box-shadow:none;counter-increment:bxg-card;transition:transform .15s,box-shadow .15s}
+html body .card:hover{transform:var(--bxg-lift);box-shadow:var(--bxg-block)}
+html body .card::after{content:"";position:absolute;left:107px;top:-2px;bottom:-2px;width:22px;background:radial-gradient(circle at 50% 0,var(--bxg-paper) 0 9px,transparent 10px) top/22px 22px no-repeat,radial-gradient(circle at 50% 100%,var(--bxg-paper) 0 9px,transparent 10px) bottom/22px 22px no-repeat;pointer-events:none}
+html body .card .card-date{grid-column:1;grid-row:1/-1;margin:0;display:flex;flex-direction:column;justify-content:space-between;align-items:center;gap:14px;padding:20px 8px;background:var(--bxg-ink);color:#fff;border-right:3px dashed var(--bxg-paper);font:400 21px/1 var(--bxg-display);letter-spacing:.06em;writing-mode:vertical-rl;transform:rotate(180deg);text-align:center}
+html body .card .card-date::before{content:"No. " counter(bxg-card,decimal-leading-zero);color:var(--bxg-red);font-size:19px}
+html body .card>:not(.card-date){grid-column:2;margin-left:26px;margin-right:24px}
+html body .card .kicker{margin-top:22px;justify-self:start;font-size:13px}
+html body .card :is(h2,h3){margin:8px 0 10px;font:400 27px/1.08 var(--bxg-display);text-transform:uppercase;overflow-wrap:break-word}
+html body .card :is(h2,h3) a{color:var(--bxg-ink);text-decoration:none}
+html body .card :is(h2,h3) a:hover{text-decoration:underline;text-decoration-color:var(--bxg-red);text-decoration-thickness:4px}
+html body .card p{margin:0 0 14px;color:var(--bxg-slate)}
+.bxg-read{justify-self:start;margin-bottom:22px;font-weight:800;text-transform:uppercase;letter-spacing:.06em;font-size:16px}
+/* four rounds */
+.bxg-rounds{list-style:none;margin:40px 0 0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px}
+.bxg-rounds li{border-top:8px solid var(--bxg-ink);padding-top:16px}
+.bxg-rounds li:nth-child(odd){border-top-color:var(--bxg-red)}
+.bxg-round{display:block;font:400 22px/1 var(--bxg-display);letter-spacing:.08em;color:var(--bxg-redink);text-transform:uppercase}
+.bxg-rounds h3{margin:10px 0 6px;font:400 28px/1.05 var(--bxg-display);text-transform:uppercase}
+.bxg-rounds p{margin:0;color:var(--bxg-slate)}
+/* closing band */
+.bxg-final{background:var(--bxg-ink);color:#fff}
+.bxg-final-in{max-width:var(--bxg-wrap);margin:0 auto;padding:76px var(--bxg-pad);display:flex;align-items:center;justify-content:space-between;gap:44px}
+.bxg-final .bxg-label{color:var(--bxg-red)}
+.bxg-final h2{margin:12px 0 12px;color:#fff;font-size:clamp(42px,4.6vw,70px);text-transform:uppercase}
+.bxg-final p{margin:0;max-width:46ch;color:#e6e6e6}
+.bxg-final .bxg-btn{flex:none}
+.bxg-checks{display:flex;flex-wrap:wrap;gap:8px 26px;list-style:none;margin:22px 0 0;padding:0;font-weight:800;text-transform:uppercase;letter-spacing:.06em;font-size:16px}
+.bxg-checks li{display:flex;align-items:center;gap:10px}
+.bxg-checks li::before{content:"";width:8px;height:15px;border:solid var(--bxg-red);border-width:0 4px 4px 0;transform:rotate(45deg) translateY(-3px)}
+/* footer: poster bottom */
+.bxg-foot{background:var(--bxg-paper);color:var(--bxg-ink);border-top:14px solid var(--bxg-red);border-image:var(--bxg-trim) 14 0 0 0/14px 0 0 0 stretch}
+.bxg-foot-in{max-width:var(--bxg-wrap);margin:0 auto;padding:48px var(--bxg-pad) 30px}
+.bxg-foot .bxg-foot-word{margin:0 0 30px;font:400 clamp(64px,11.5vw,170px)/.86 var(--bxg-display);letter-spacing:.01em;text-transform:uppercase;color:var(--bxg-redink);white-space:nowrap;overflow:hidden}
+.bxg-foot-cols{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr) minmax(0,1fr);gap:40px;border-top:2px solid var(--bxg-ink);padding-top:26px}
+.bxg-foot h2{margin:0 0 10px;font:800 15px/1.3 var(--bxg-text);letter-spacing:.16em;text-transform:uppercase;color:var(--bxg-redink)}
+.bxg-foot-cols p{margin:0;max-width:52ch;color:var(--bxg-slate);font-size:17px}
+.bxg-foot ul{list-style:none;margin:0;padding:0}
+.bxg-foot li a,.bxg-foot li a:visited{display:inline-block;padding:5px 0;color:var(--bxg-ink);font-weight:600}
+.bxg-foot .bxg-foot-copy{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;margin:30px 0 0;padding-top:16px;border-top:1px solid var(--bxg-mist);font-size:15px;color:var(--bxg-slate)}
+/* article pages: legacy markup restyled, bodies untouched; hero aligned to the article column */
+html body .hero{background:transparent;color:var(--bxg-ink)}
+html body .hero-inner{max-width:var(--bxg-wrap);margin:0 auto;padding:44px calc(var(--bxg-pad) + var(--bxg-side) + var(--bxg-gap)) 0 var(--bxg-pad)}
+html body .hero-inner.with-photo{display:flex;flex-direction:column;align-items:stretch}
+html body .hero-inner.with-photo>.hero-photo{order:-1;position:relative;margin:0 0 30px;padding:0;background:var(--bxg-red);border:2px solid var(--bxg-ink);box-shadow:var(--bxg-block)}
+html body .hero-photo img{display:block;width:100%;height:auto;aspect-ratio:16/7;object-fit:cover;object-position:50% 30%;border-radius:0}
+html body .hero-photo figcaption{position:absolute;right:0;bottom:0;margin:0;padding:4px 10px;background:var(--bxg-ink);color:#fff;font:600 13px/1.3 var(--bxg-text);letter-spacing:.06em;text-transform:uppercase;opacity:1}
+html body .hero p{opacity:1;text-transform:none;letter-spacing:0;font-size:inherit;color:var(--bxg-ink);margin:0}
+html body .hero p.kicker{align-self:flex-start;background:var(--bxg-ink);color:#fff;padding:6px 12px 5px;font-size:14px;letter-spacing:.16em;text-transform:uppercase}
+html body .hero h1{max-width:none;margin:16px 0 16px;font-size:clamp(34px,3.3vw,50px);line-height:1.06;color:var(--bxg-ink);text-wrap:balance;overflow-wrap:break-word}
+html body .hero .lead{max-width:none;border-left:4px solid var(--bxg-redink);padding-left:16px;font:600 20px/1.5 var(--bxg-text);color:var(--bxg-slate)}
+html body .layout{max-width:var(--bxg-wrap);margin:34px auto 80px;padding:0 var(--bxg-pad);display:grid;grid-template-columns:minmax(0,1fr) var(--bxg-side);gap:var(--bxg-gap);align-items:start}
+html body .article{min-width:0;background:#fff;border:2px solid var(--bxg-ink);border-radius:0;box-shadow:none;padding:44px 50px}
+html body .article :is(p,li){color:#1f1f1f}
+html body .article p{margin:0 0 1.05em}
+html body .article :is(ul,ol){padding-left:26px;margin:0 0 1.2em}
+html body .article h2{margin:50px 0 16px;padding-top:14px;border-top:6px solid var(--bxg-ink);font-size:clamp(28px,2.4vw,36px);line-height:1.1;color:var(--bxg-ink)}
+html body .article h3{margin:28px 0 8px;font-size:21px;color:var(--bxg-ink)}
+html body .article a{color:#0066cc;text-decoration-color:currentColor;text-decoration-thickness:1px}
+html body .article a:visited{color:#0052a3}
+html body .article .meta{color:var(--bxg-slate);border-bottom:1px solid var(--bxg-mist);font-size:16px}
+html body .article-breadcrumb{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 16px;font-size:16px;color:var(--bxg-slate)}
+html body .article .article-breadcrumb a{color:var(--bxg-ink);font-weight:800;text-decoration-color:var(--bxg-red)}
+html body .article table{display:block;max-width:100%;overflow-x:auto;border-collapse:collapse;margin:20px 0 26px;font-size:17px}
+html body :is(img,iframe,video){max-width:100%}html body .article :is(pre,code){max-width:100%;overflow-x:auto}
+html body :is(.article,.panel,.sidebar) :is(h1,h2,h3,p,li,td,th){overflow-wrap:break-word}
+html body .article th{background:var(--bxg-ink);color:#fff;border:1px solid var(--bxg-ink);padding:10px 12px;text-align:left;font-weight:800}
+html body .article td{border:1px solid var(--bxg-mist);padding:10px 12px;vertical-align:top}
+html body .article blockquote{margin:20px 0;padding:16px 18px;border-left:6px solid var(--bxg-red);background:var(--bxg-paper);color:var(--bxg-ink)}
+html body .article details{border:2px solid var(--bxg-ink);border-radius:0;background:#fff;padding:14px 18px;margin:0 0 12px}
+html body .article summary{cursor:pointer;color:var(--bxg-ink);font-weight:800}
+html body .article :is(.callout,.tldr,.note,.ai-note){background:var(--bxg-paper);border:0;border-left:6px solid var(--bxg-red);border-radius:0;padding:18px 20px;margin:20px 0}
+html body .article .callout p{margin:0 0 .6em}html body .article .callout p:last-child{margin-bottom:0}
+html body .article .boxer-video{position:relative;aspect-ratio:16/9;background:var(--bxg-ink);margin:28px 0}
+html body .article .boxer-video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+html body .article .fit-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px}
+html body .article :is(#fit-form,#rw-picker,#bx-planner,form,div) button:not([class*="bxg-"]){background:var(--bxg-ink);color:#fff;border:0;border-radius:0;padding:12px 20px;font:800 16px/1.2 var(--bxg-text);letter-spacing:.08em;text-transform:uppercase;cursor:pointer}
+html body .article :is(#fit-form,#rw-picker,#bx-planner,form,div) button:not([class*="bxg-"]):hover{transform:var(--bxg-lift);box-shadow:var(--bxg-block)}
+html body .article :is(input,select,textarea){font:inherit;font-size:17px;max-width:100%;border:2px solid var(--bxg-ink);border-radius:0;background:#fff;color:var(--bxg-ink);padding:8px 10px}
+html body .article input[type="checkbox"],html body .article input[type="radio"]{width:auto;padding:0}
+html body .sidebar{position:sticky;top:20px;display:grid;gap:22px;align-self:start;min-width:0;max-height:none;overflow:visible}
+html body .sidebar-panel{background:#fff;border:2px solid var(--bxg-ink);border-radius:0;box-shadow:none;padding:20px 22px}
+html body .sidebar-panel h3{margin:0 0 10px;font:800 15px/1.3 var(--bxg-text);letter-spacing:.16em;text-transform:uppercase;color:var(--bxg-redink)}
+html body .sidebar-panel :is(p,li){font-size:17px;color:var(--bxg-ink)}
+html body .sidebar-panel p{margin:0 0 10px}
+html body .sidebar-panel ul{margin:0;padding-left:18px}
+html body .sidebar-panel li{margin-bottom:8px}
+html body .sidebar-panel a{font-weight:600}
+.bxg-side-cta{position:relative;overflow:hidden;background:var(--bxg-ink);color:#fff;padding:24px 24px 28px;border-top:10px solid var(--bxg-red);border-image:var(--bxg-trim) 10 0 0 0/10px 0 0 0 stretch}
+.bxg-side-cta .bxg-label{color:var(--bxg-red)}
+.bxg-side-cta .bxg-side-no{position:absolute;right:12px;top:4px;margin:0;font:400 92px/1 var(--bxg-display);color:transparent;-webkit-text-stroke:2px #333;pointer-events:none}
+.bxg-side-cta h3{position:relative;margin:10px 0 8px;font:400 32px/1.02 var(--bxg-display);text-transform:uppercase;color:#fff}
+.bxg-side-cta p{position:relative;margin:0 0 20px;font-size:17px;color:#e6e6e6}
+.bxg-side-cta .bxg-btn{background:var(--bxg-red);color:var(--bxg-ink);font-size:16px;padding:13px 22px}
+.bxg-side-cta .bxg-btn:hover{color:var(--bxg-ink);box-shadow:5px 5px 0 #fff}
+/* static pages */
+html body .breadcrumb{background:transparent;border:0;border-bottom:2px solid var(--bxg-ink)}
+html body .breadcrumb-inner{max-width:var(--bxg-wrap)!important;margin:0 auto;padding:14px var(--bxg-pad);font-size:16px;display:flex;flex-wrap:wrap;gap:8px;color:var(--bxg-slate)}
+html body .breadcrumb a{color:var(--bxg-ink);font-weight:800}
+html body .wrap{max-width:var(--bxg-wrap);margin:50px auto 80px;padding:0 var(--bxg-pad)}
+html body .follow-sidebar-layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:44px;align-items:start;width:auto;margin:0}
+html body .panel{min-width:0;background:#fff;border:2px solid var(--bxg-ink);border-radius:0;box-shadow:none;padding:44px 50px}
+html body .panel h1{font-size:clamp(40px,4.4vw,62px);margin:0 0 20px;text-transform:uppercase}
+html body .panel h2{font-size:32px;margin:32px 0 10px}
+html body .panel :is(p,li){color:#1f1f1f}
+html body .panel p{margin:0 0 14px}
+html body .panel :is(ul,ol){padding-left:24px;margin:0 0 16px}
+html body .panel a{color:#0066cc;text-decoration-color:currentColor;text-decoration-thickness:1px}
+html body .panel a:visited{color:#0052a3}
+html body .follow-sidebar-panel{background:var(--bxg-ink);color:#fff;border:0;border-radius:0;padding:22px 24px;margin:0}
+html body .follow-sidebar-panel h2{margin:0 0 8px;font:800 15px/1.3 var(--bxg-text);letter-spacing:.16em;text-transform:uppercase;color:var(--bxg-red)}
+html body .follow-sidebar-panel ul{list-style:none;margin:0;padding:0}
+html body .follow-sidebar-panel a{display:block;padding:7px 0;color:#fff;font-weight:600}
+/* blog index */
+.bxg-index-head{background:var(--bxg-ink);color:#fff}
+.bxg-index-head-in{max-width:var(--bxg-wrap);margin:0 auto;padding:34px var(--bxg-pad) 54px}
+.bxg-crumbs{margin:0 0 26px;font-size:16px;color:#d6d6d6}.bxg-crumbs a{color:#fff;font-weight:800}
+.bxg-index-head .kicker{color:var(--bxg-red)}
+.bxg-index-head h1{margin:14px 0 16px;color:#fff;font-size:clamp(56px,7vw,104px);line-height:.92;text-transform:uppercase}
+.bxg-index-head h1 span{color:transparent;-webkit-text-stroke:2px #fff}
+.bxg-index-head p{margin:0;max-width:60ch;color:#e6e6e6}
+.bxg-promo{margin-top:56px;display:flex;justify-content:space-between;align-items:center;gap:30px;flex-wrap:wrap;background:var(--bxg-red);border:2px solid var(--bxg-ink);padding:30px 34px}
+.bxg-promo h2{margin:6px 0 6px;font-size:clamp(34px,3.4vw,48px);text-transform:uppercase}
+.bxg-promo p{margin:0;max-width:52ch;font-weight:600}
+.bxg-promo .bxg-label{color:var(--bxg-ink)}
+/* name generator page */
+.bxg-tool-head{background:var(--bxg-red);border-bottom:2px solid var(--bxg-ink);overflow:hidden}
+.bxg-tool-head-in{position:relative;max-width:var(--bxg-wrap);margin:0 auto;padding:30px var(--bxg-pad) 50px}
+.bxg-tool-head .bxg-crumbs{color:var(--bxg-ink)}.bxg-tool-head .bxg-crumbs a{color:var(--bxg-ink);text-decoration-color:var(--bxg-ink)}
+.bxg-tool-head .kicker{background:var(--bxg-ink);color:#fff;padding:6px 12px 5px}
+.bxg-tool-head h1{position:relative;margin:16px 0 16px;max-width:14ch;font-size:clamp(56px,7vw,104px);line-height:.92;text-transform:uppercase}
+.bxg-tool-head p.bxg-tool-lead{position:relative;margin:0;max-width:52ch;font:600 21px/1.45 var(--bxg-text)}
+.bxg-tool-names{position:absolute;right:var(--bxg-pad);top:24px;bottom:24px;display:flex;flex-direction:column;justify-content:center;margin:0;text-align:right;font:400 46px/1.06 var(--bxg-display);text-transform:uppercase;color:transparent;-webkit-text-stroke:2px rgba(13,13,13,.55);pointer-events:none}
+.bxg-shared{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 24px;margin:0 0 28px;padding:16px 20px;background:var(--bxg-ink);color:#fff;font-weight:600}
+.bxg-shared[hidden]{display:none}
+.bxg-shared a{color:#fff;font-weight:800}
+html body .article .bxg-form fieldset{border:0;border-top:2px solid var(--bxg-ink);margin:0;padding:20px 0 24px;min-width:0}
+html body .article .bxg-form fieldset:first-of-type{border-top:0;padding-top:0}
+html body .article .bxg-form legend{float:left;width:100%;padding:0;margin:0 0 12px;font:400 26px/1.1 var(--bxg-display);text-transform:uppercase;color:var(--bxg-ink)}
+html body .article .bxg-form legend span{color:var(--bxg-redink)}
+html body .article .bxg-form legend+*{clear:left}
+html body .article .bxg-chips{display:flex;flex-wrap:wrap;gap:10px}
+html body .article .bxg-chip{position:relative;display:inline-block;cursor:pointer}
+html body .article .bxg-chip input{position:absolute;opacity:0;width:1px;height:1px;margin:0}
+html body .article .bxg-chip span{display:inline-block;min-width:48px;text-align:center;background:#fff;border:2px solid var(--bxg-ink);padding:8px 16px;font:800 16px/1.3 var(--bxg-text);letter-spacing:.06em;text-transform:uppercase;color:var(--bxg-ink)}
+html body .article .bxg-chip input:checked+span{background:var(--bxg-ink);color:#fff;box-shadow:4px 4px 0 var(--bxg-red)}
+html body .article .bxg-chip input:focus-visible+span{outline:3px solid #0066cc;outline-offset:3px}
+html body .article .bxg-styles{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px}
+html body .article .bxg-style span{display:grid;gap:2px;height:100%;text-align:left;padding:12px 14px}
+html body .article .bxg-style small{font:400 15px/1.35 var(--bxg-text);letter-spacing:0;text-transform:none;color:var(--bxg-slate)}
+html body .article .bxg-style input:checked+span small{color:#e6e6e6}
+html body .article .bxg-fields{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px 20px;margin-top:14px}
+html body .article .bxg-field{display:grid;gap:6px;font-weight:800;font-size:16px;letter-spacing:.04em;color:var(--bxg-ink)}
+html body .article .bxg-field :is(input,select){width:100%;min-height:48px;font-weight:600}
+html body .article .bxg-hint{margin:10px 0 0;font-size:16px;color:var(--bxg-slate)}
+html body .article .bxg-form .bxg-btn,html body .article .bxg-tools .bxg-btn{background:var(--bxg-ink);color:#fff;font:800 18px/1.2 var(--bxg-text);letter-spacing:.08em;padding:15px 30px 14px}
+html body .article .bxg-form .bxg-btn:hover,html body .article .bxg-tools .bxg-btn:hover,html body .article .bxg-lineup .bxg-btn:hover{transform:skewX(-12deg) var(--bxg-lift);box-shadow:var(--bxg-block)}
+html body .article .bxg-status{min-height:1.7em;margin:16px 0 0;font-weight:800;color:var(--bxg-ink)}
+html body .article .bxg-status.bxg-error{color:var(--bxg-redink)}
+.bxg-lineup,.bxg-studio,.bxg-keep{margin-top:34px;padding-top:28px;border-top:8px solid var(--bxg-ink)}
+html body .article .bxg-out-title{margin:0 0 6px;padding:0;border:0;font-size:clamp(32px,3vw,44px);text-transform:uppercase}
+html body .article .bxg-out-lead{margin:0 0 20px;color:var(--bxg-slate)}
+html body .article .bxg-picks{display:grid;grid-template-columns:repeat(auto-fill,minmax(148px,1fr));gap:22px 16px;list-style:none;margin:0;padding:0}
+html body .article .bxg-picks li{margin:0;min-width:0;display:grid;gap:10px;align-content:start}
+html body .article .bxg-picks .bxg-jersey{padding-top:30px;min-height:178px}
+html body .article .bxg-picks .bxg-jersey small{color:#cfcfcf}
+html body .article .bxg-pick-tools{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px}
+html body .article .bxg-pick-tools button{min-height:40px;background:#fff;color:var(--bxg-ink);border:2px solid var(--bxg-ink);padding:6px 8px;font:800 13px/1.2 var(--bxg-text);letter-spacing:.05em;text-transform:uppercase;cursor:pointer;white-space:nowrap}
+html body .article .bxg-pick-tools button.bxg-make{background:var(--bxg-ink);color:#fff}
+html body .article .bxg-pick-tools button[aria-pressed="true"]{background:var(--bxg-red);color:var(--bxg-ink)}
+html body .article .bxg-pick-tools button:hover{transform:var(--bxg-lift);box-shadow:4px 4px 0 var(--bxg-red)}
+html body .article .bxg-pick-tools button[aria-pressed="true"]:hover{box-shadow:4px 4px 0 var(--bxg-ink)}
+html body .article .bxg-lineup-tools{display:flex;flex-wrap:wrap;align-items:center;gap:14px 28px;margin-top:22px}
+html body .article .bxg-keep-list{display:flex;flex-wrap:wrap;gap:10px;list-style:none;margin:0;padding:0}
+html body .article .bxg-keep-list li{display:flex;align-items:center;margin:0;border:2px solid var(--bxg-ink);background:#fff}
+html body .article .bxg-keep-list button{background:#fff;color:var(--bxg-ink);border:0;padding:8px 12px;font:800 15px/1.2 var(--bxg-text);letter-spacing:.06em;text-transform:uppercase}
+html body .article .bxg-keep-list button+button{border-left:2px solid var(--bxg-ink);color:var(--bxg-redink)}
+html body .article .bxg-keep-list button:hover{background:var(--bxg-ink);color:#fff;transform:none;box-shadow:none}
+.bxg-studio-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:30px;align-items:start}
+.bxg-preview{margin:0;display:grid;justify-items:center;background:var(--bxg-paper);border:2px solid var(--bxg-ink);padding:16px}
+.bxg-preview canvas{display:block;width:100%;height:auto;max-width:100%;box-shadow:6px 6px 0 var(--bxg-ink)}
+.bxg-preview.bxg-fmt-story canvas{max-width:280px}
+.bxg-preview figcaption{margin-top:14px;font-size:15px;color:var(--bxg-slate);text-align:center}
+html body .article .bxg-studio .bxg-fields{grid-template-columns:minmax(0,1fr) minmax(0,1fr);margin-top:0}
+html body .article .bxg-studio .bxg-field.bxg-wide{grid-column:1/-1}
+html body .article .bxg-studio .bxg-chips{gap:8px}
+html body .article .bxg-studio .bxg-chip span{padding:7px 12px;font-size:15px}
+.bxg-set{margin:16px 0 0;padding:0;border:0}
+html body .article .bxg-set legend{float:none;margin:0 0 8px;font:800 16px/1.3 var(--bxg-text);letter-spacing:.04em;text-transform:none}
+html body .article .bxg-tools{display:flex;flex-wrap:wrap;align-items:center;gap:14px 24px;margin:24px 0 0;padding:18px 20px;background:var(--bxg-paper);border:2px solid var(--bxg-ink)}
+.bxg-link-box{display:grid;gap:6px;margin-top:14px}
+html body .article .bxg-link-box input{width:100%;font-size:15px}
+.bxg-link-box[hidden]{display:none}
+html body .article .bxg-tool-notes h2{margin-top:56px}
+@media (prefers-reduced-motion:reduce){.bxg-btn,.bxg-path,html body .card,a.bxg-jersey-link{transition:none}}
+/* breakpoints: wide laptop, tablet, phone */
+@media (min-width:1025px) and (max-width:1439px){:root{--bxg-pad:48px;--bxg-side:300px;--bxg-gap:40px}html body{font-size:18px}.bxg-hero h1{font-size:90px}.bxg-hero-in{gap:48px}.bxg-jerseys{gap:14px}.bxg-jersey strong{font-size:21px}html body .article{padding:40px 44px}.bxg-tool-names{font-size:38px}}
+@media (max-width:1024px){:root{--bxg-pad:28px;--bxg-side:270px;--bxg-gap:30px}.bxg-hero-in{grid-template-columns:minmax(0,1fr) minmax(0,.8fr);gap:36px;padding-top:52px;padding-bottom:60px}.bxg-hero h1{font-size:68px}.bxg-jerseys{grid-template-columns:repeat(3,minmax(0,1fr))}.bxg-paths{grid-template-columns:minmax(0,1fr)}.bxg-path{display:grid;grid-template-columns:76px 1fr;column-gap:20px}.bxg-path svg{grid-row:1/span 3}.bxg-path h3{margin-top:0}.bxg-rounds{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:30px}.bxg-tickets{grid-template-columns:minmax(0,1fr)}.bxg-score dt{font-size:88px}html body .article{padding:34px 32px}html body .follow-sidebar-layout{grid-template-columns:minmax(0,1fr) 250px;gap:30px}.bxg-studio-grid{grid-template-columns:minmax(0,1fr)}.bxg-preview{max-width:460px}.bxg-tool-names{display:none}}
+@media (max-width:900px){.bxg-nav{display:none}.bxg-menu{display:block}.bxg-bar-in{min-height:68px}.bxg-logo,.bxg-logo:visited{font-size:28px}}
+@media (max-width:767px){:root{--bxg-pad:18px;--bxg-gap:30px}html body{font-size:18px}.bxg-logo,.bxg-logo:visited{font-size:24px;gap:10px}.bxg-mono{width:38px;height:34px;font-size:19px}.bxg-hero-in{grid-template-columns:minmax(0,1fr);padding-top:34px;padding-bottom:48px;gap:36px}.bxg-hero h1{font-size:54px}.bxg-hero-lead{font-size:19px}.bxg-poster{max-width:340px;margin:44px auto 0;transform:rotate(1.5deg)}.bxg-poster-no{left:-12px;top:-50px;font-size:84px}.bxg-sec{padding-top:58px;padding-bottom:58px}.bxg-sec h2,.bxg-sec-head h2{font-size:42px}.bxg-jerseys{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.bxg-path{display:flex}.bxg-score{grid-template-columns:minmax(0,1fr)}.bxg-score div{border-left:0;border-top:2px solid #3a3a3a}.bxg-score div:first-child{border-top:0}.bxg-score dt{font-size:80px}html body .card{grid-template-columns:minmax(0,1fr);grid-template-rows:auto}html body .card::after{display:none}html body .card .card-date{grid-row:auto;grid-column:1;writing-mode:horizontal-tb;transform:none;flex-direction:row;padding:10px 16px;border-right:0;border-bottom:3px dashed var(--bxg-paper);font-size:18px}html body .card .card-date::before{font-size:17px}html body .card>:not(.card-date){grid-column:1;margin-left:18px;margin-right:18px}html body .card :is(h2,h3){font-size:25px}.bxg-rounds{grid-template-columns:minmax(0,1fr)}.bxg-final-in{flex-direction:column;align-items:flex-start;padding-top:56px;padding-bottom:56px}.bxg-btn,.bxg-btn:visited{max-width:360px;text-align:center}.bxg-foot-cols{grid-template-columns:minmax(0,1fr);gap:26px}html body .hero-inner{padding:26px var(--bxg-pad) 0}html body .hero-inner.with-photo>.hero-photo{margin-bottom:22px;box-shadow:4px 4px 0 var(--bxg-red)}html body .hero h1{font-size:34px}html body .hero .lead{font-size:18px}html body .layout{grid-template-columns:minmax(0,1fr);margin:26px auto 50px}html body .article{padding:26px 18px}html body .article h2{font-size:28px}html body .sidebar{position:static;display:grid}html body .wrap{margin:30px auto 50px}html body .follow-sidebar-layout{grid-template-columns:minmax(0,1fr);gap:30px}html body .panel{padding:28px 20px}.bxg-index-head h1,.bxg-tool-head h1{font-size:56px}.bxg-promo{padding:24px 20px}html body .article .bxg-picks{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 12px}html body .article .bxg-picks .bxg-jersey strong{font-size:20px}html body .article .bxg-studio .bxg-fields{grid-template-columns:minmax(0,1fr)}html body .article .bxg-tools{padding:16px}}
+</style>
+</head>
+<body>
+<a class="bxg-skip" href="#bxg-main">Skip to content</a>
+<header class="sc-topbar bxg-bar">
+  <div class="bxg-bar-in">
+    <a class="bxg-logo" href="/"><span class="bxg-mono" aria-hidden="true"><b>BG</b></span>Boxer Guide</a>
+    <nav class="bxg-nav" aria-label="Main"><ul><li><a href="/">Home</a></li><li><a href="/blog.html">Guides</a></li><li><a href="/care.html">Care</a></li><li><a href="/about.html">About</a></li><li><a href="/contact.html">Contact</a></li><li><a href="/sitemap.html">Sitemap</a></li><li><a class="bxg-nav-cta" href="/boxer-name-generator.html" data-bxg-from="nav" aria-current="page"><span>Name generator</span></a></li></ul></nav>
+    <details class="bxg-menu"><summary><span>Menu</span></summary><nav aria-label="Mobile"><a class="bxg-menu-main" href="/boxer-name-generator.html" data-bxg-from="nav_mobile"><span>Name generator</span><b>&rarr;</b></a><a class="bxg-menu-main" href="/blog.html"><span>All guides</span><b>&rarr;</b></a><div class="bxg-menu-small"><a href="/">Home</a><a href="/care.html">Care</a><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/sitemap.html">Sitemap</a></div></nav></details>
+  </div>
+</header>
+<section class="bxg-tool-head"><div class="bxg-tool-head-in">
+  <nav class="bxg-crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <span aria-current="page">Name generator</span></nav>
+  <p class="kicker">Name generator</p>
+  <h1>Boxer name generator</h1>
+  <p class="bxg-tool-lead">Shuffle boy and girl names by style, coat and first letter. Keep a shortlist, then put the winner on a poster name card to download or share.</p>
+  <p class="bxg-tool-names" aria-hidden="true"><span>Rocky</span><span>Bella</span><span>Tank</span><span>Greta</span><span>Biscuit</span></p>
+</div></section>
+<div class="bxg-trim" aria-hidden="true"></div>
+<div class="layout" id="bxg-main">
+<article class="article">
+  <p class="bxg-shared" id="bxg-shared" hidden><span>Someone shared this name card with you.</span><a href="#bxg-form">Shuffle your own line-up &darr;</a></p>
+  <form id="bxg-form" class="bxg-form" novalidate>
+    <fieldset><legend><span>1.</span> Boy or girl?</legend><div class="bxg-chips"><label class="bxg-chip"><input type="radio" name="sex" value="any" checked><span>Either</span></label><label class="bxg-chip"><input type="radio" name="sex" value="m"><span>Boy</span></label><label class="bxg-chip"><input type="radio" name="sex" value="f"><span>Girl</span></label></div></fieldset>
+    <fieldset><legend><span>2.</span> Pick one or more styles</legend><div class="bxg-styles"><label class="bxg-chip bxg-style"><input type="checkbox" name="style" value="champ" checked><span>Champion<small>Quick, punchy names for a dog that moves like an athlete.</small></span></label><label class="bxg-chip bxg-style"><input type="checkbox" name="style" value="classic"><span>Classic<small>Names every neighbour can say on the first try.</small></span></label><label class="bxg-chip bxg-style"><input type="checkbox" name="style" value="foodie"><span>Foodie<small>Snacks, bakes and sweet things.</small></span></label><label class="bxg-chip bxg-style"><input type="checkbox" name="style" value="mighty"><span>Mighty<small>Big names from myth and muscle.</small></span></label><label class="bxg-chip bxg-style"><input type="checkbox" name="style" value="goofy" checked><span>Goofy<small>For the wiggle-butt clown of the house.</small></span></label><label class="bxg-chip bxg-style"><input type="checkbox" name="style" value="german"><span>German classics<small>The modern Boxer traces back to Germany.</small></span></label><label class="bxg-chip bxg-style"><input type="checkbox" name="style" value="coat"><span>Coat colour<small>Names that match fawn, brindle or white markings.</small></span></label></div></fieldset>
+    <fieldset><legend><span>3.</span> Coat</legend><div class="bxg-chips"><label class="bxg-chip"><input type="radio" name="coat" value="fawn" checked><span>Fawn</span></label><label class="bxg-chip"><input type="radio" name="coat" value="brindle"><span>Brindle</span></label><label class="bxg-chip"><input type="checkbox" name="marks" value="1" checked><span>White markings</span></label></div>
+      <p class="bxg-hint">The <a href="https://www.akc.org/dog-breeds/boxer/">AKC</a> describes the Boxer coat as fawn or brindle, with white markings. The coat changes the names under &ldquo;Coat colour&rdquo; and the colour band on the card.</p></fieldset>
+    <fieldset><legend><span>4.</span> First letter and length</legend><div class="bxg-fields"><label class="bxg-field" for="bxg-letter">First letter<select id="bxg-letter" name="letter"><option value="" selected>Any letter</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option><option value="G">G</option><option value="H">H</option><option value="I">I</option><option value="J">J</option><option value="K">K</option><option value="L">L</option><option value="M">M</option><option value="N">N</option><option value="O">O</option><option value="P">P</option><option value="R">R</option><option value="S">S</option><option value="T">T</option><option value="V">V</option><option value="W">W</option><option value="X">X</option><option value="Z">Z</option></select></label></div>
+      <div class="bxg-chips" style="margin-top:14px"><label class="bxg-chip"><input type="radio" name="len" value="any" checked><span>Any</span></label><label class="bxg-chip"><input type="radio" name="len" value="short"><span>Short (up to 5 letters)</span></label><label class="bxg-chip"><input type="radio" name="len" value="long"><span>Long (6+ letters)</span></label></div></fieldset>
+    <p><button class="bxg-btn" type="submit"><span>Generate line-up</span></button></p>
+  </form>
+  <p class="bxg-status" id="bxg-status" role="status" aria-live="polite"></p>
+  <section class="bxg-lineup" id="bxg-lineup" aria-labelledby="bxg-lineup-h" hidden>
+    <h2 class="bxg-out-title" id="bxg-lineup-h">Your starting line-up</h2>
+    <p class="bxg-out-lead">Tap &ldquo;Make card&rdquo; for the name you like, or &ldquo;Keep&rdquo; to put it on your shortlist.</p>
+    <ul class="bxg-picks" id="bxg-picks"></ul>
+    <div class="bxg-lineup-tools"><button class="bxg-btn" type="button" id="bxg-shuffle"><span>Shuffle again</span></button><button class="bxg-ghost" type="button" id="bxg-own">Already have a name? Make the card</button></div>
+  </section>
+  <section class="bxg-keep" id="bxg-keep" aria-labelledby="bxg-keep-h" hidden>
+    <h2 class="bxg-out-title" id="bxg-keep-h">Your shortlist</h2>
+    <p class="bxg-out-lead">Saved in this browser only. Tap a name to make its card.</p>
+    <ul class="bxg-keep-list" id="bxg-keep-list"></ul>
+  </section>
+  <section class="bxg-studio" id="bxg-studio" aria-labelledby="bxg-studio-h" hidden>
+    <h2 class="bxg-out-title" id="bxg-studio-h" tabindex="-1">Your name card</h2>
+    <div class="bxg-studio-grid">
+      <figure class="bxg-preview" id="bxg-preview"><canvas id="bxg-card" width="1080" height="1350" role="img" aria-label="Name card preview"></canvas><figcaption>Preview. The download is a 1080 px PNG image.</figcaption></figure>
+      <form id="bxg-card-form" novalidate><div class="bxg-fields">
+        <label class="bxg-field bxg-wide" for="bxg-name">Name on the card<input id="bxg-name" name="name" maxlength="14" autocomplete="off" spellcheck="false"></label>
+        <label class="bxg-field" for="bxg-no">Jersey number<input id="bxg-no" name="no" type="number" min="0" max="99" inputmode="numeric"></label>
+        <label class="bxg-field" for="bxg-year">Year they joined<select id="bxg-year" name="year"><option value="" selected>No year</option><option value="2026">2026</option><option value="2025">2025</option><option value="2024">2024</option><option value="2023">2023</option><option value="2022">2022</option><option value="2021">2021</option><option value="2020">2020</option><option value="2019">2019</option><option value="2018">2018</option><option value="2017">2017</option><option value="2016">2016</option><option value="2015">2015</option><option value="2014">2014</option><option value="2013">2013</option><option value="2012">2012</option><option value="2011">2011</option><option value="2010">2010</option></select></label>
+        <label class="bxg-field bxg-wide" for="bxg-tag">Tagline<select id="bxg-tag" name="tag"><option value="0" selected>Professional zoomie athlete</option><option value="1">Undefeated couch champion</option><option value="2">Born to bounce</option><option value="3">Heavyweight of cuddles</option><option value="4">Wiggle-butt MVP</option><option value="5">Captain of the morning walk</option><option value="6">Fetch league all-star</option><option value="7">Certified good sport</option></select></label>
+      </div>
+      <fieldset class="bxg-set"><legend>Colours</legend><div class="bxg-chips"><label class="bxg-chip"><input type="radio" name="th" value="red" checked><span>Red</span></label><label class="bxg-chip"><input type="radio" name="th" value="black"><span>Black</span></label><label class="bxg-chip"><input type="radio" name="th" value="paper"><span>Paper</span></label></div></fieldset>
+      <fieldset class="bxg-set"><legend>Coat band</legend><div class="bxg-chips"><label class="bxg-chip"><input type="radio" name="coat" value="fawn" checked><span>Fawn</span></label><label class="bxg-chip"><input type="radio" name="coat" value="brindle"><span>Brindle</span></label><label class="bxg-chip"><input type="checkbox" name="marks" value="1" checked><span>White markings</span></label></div></fieldset>
+      <fieldset class="bxg-set"><legend>Format</legend><div class="bxg-chips"><label class="bxg-chip"><input type="radio" name="f" value="portrait" checked><span>Portrait 4:5</span></label><label class="bxg-chip"><input type="radio" name="f" value="square"><span>Square</span></label><label class="bxg-chip"><input type="radio" name="f" value="story"><span>Story 9:16</span></label></div></fieldset>
+      </form>
+    </div>
+    <div class="bxg-tools"><button class="bxg-btn" type="button" id="bxg-download"><span>Download card (PNG)</span></button><button class="bxg-ghost" type="button" id="bxg-share" hidden>Share card</button><button class="bxg-ghost" type="button" id="bxg-copy">Copy link to this card</button></div>
+    <p class="bxg-status" id="bxg-card-status" role="status" aria-live="polite"></p>
+    <div class="bxg-link-box" id="bxg-link-box" hidden><label class="bxg-field" for="bxg-link">Link to this card<input id="bxg-link" readonly></label></div>
+  </section>
+  <noscript><p><strong>Without JavaScript:</strong> the generator and the name card need JavaScript. A few names to start with: Rocky, Bella, Biscuit, Tank, Wiggles, Greta.</p></noscript>
+  <section class="bxg-tool-notes">
+    <h2>How the line-up is picked</h2>
+    <p>The generator holds 148 names, each tagged boy, girl or either and sorted into styles. Your settings filter the list, and eight matching names are drawn at random. Shuffle again for another eight. If fewer than eight match, you see all of them and a hint to widen the search.</p>
+    <p>&ldquo;Coat colour&rdquo; adds names that suit the coat you picked, and names for white markings when that box is ticked. The <a href="https://www.akc.org/dog-breeds/boxer/">AKC breed page</a> traces the modern Boxer to Germany in the late 1800s, hence the German classics, and says Boxers &ldquo;move like the athletes they are named for&rdquo;, hence the champion names.</p>
+    <h2>Choosing between finalists</h2>
+    <ul><li><strong>Say it out loud.</strong> Call each finalist the way you would across a park. The one that feels natural to shout usually wins.</li><li><strong>Listen for your cues.</strong> A name that rhymes with a cue you use, such as Kit and Sit, can be confusing in training.</li><li><strong>Ask the family.</strong> Share the card or the link and let everyone vote.</li><li><strong>Try it for a day.</strong> Use the favourite for a day before you put it on a tag.</li></ul>
+    <h2>What happens to the card</h2>
+    <p>The card is drawn in your browser. Nothing you type is sent to us, and there is no account. The shortlist is kept in this browser only. The share link carries the card settings in the part of the address after the #, so anyone who opens it sees the same card and can change it.</p>
+    <p>Once the name is settled, the guides on <a href="/boxer-puppy-energy-when-does-it-calm-down.html">puppy energy</a> and <a href="/boxer-winter-coat-fit.html">winter coat fit</a> are a good next read.</p>
+  </section>
+</article>
+<aside class="sidebar" aria-label="About the name generator">
+  <section class="sidebar-panel"><h3>Where the styles come from</h3><ul><li><a href="https://www.akc.org/dog-breeds/boxer/">AKC: Boxer breed page</a> (fawn or brindle coat with white markings, traced to Germany)</li></ul></section>
+  <section class="sidebar-panel"><h3>Read next</h3><ul><li><a href="/boxer-puppy-energy-when-does-it-calm-down.html">Boxer puppy energy: when does it calm down?</a></li><li><a href="/boxer-winter-coat-fit.html">Winter coat fit for a deep chest</a></li><li><a href="/ruffwear-ridgeline-vs-front-range-flex-boxer.html">Two harnesses on a strong puller</a></li></ul></section>
+  <section class="sidebar-panel"><h3>Privacy</h3><p>No account and no email. The card is drawn on your device and only leaves it if you download or share it.</p></section>
+</aside>
+</div>
+<footer class="sc-footer bxg-foot">
+  <div class="bxg-foot-in">
+    <p class="bxg-foot-word" aria-hidden="true">Boxer Guide</p>
+    <div class="bxg-foot-cols">
+      <div><h2>The club</h2><p>Boxer Guide is a small, practical site for people who live with a Boxer: energy, training, gear that fits and a name generator for the newest member of the team. Guides are drafted with AI assistance and checked against the linked sources. Set in Anton and Barlow.</p></div>
+      <div><h2>Play</h2><ul><li><a href="/boxer-name-generator.html">Name generator</a></li><li><a href="/blog.html">All guides</a></li><li><a href="/care.html">Care</a></li><li><a href="/sitemap.html">Sitemap</a></li></ul></div>
+      <div><h2>The rules</h2><ul><li><a href="/about.html">About</a></li><li><a href="/contact.html">Contact</a></li><li><a href="/editorial-policy.html">Editorial policy</a></li><li><a href="/disclosure.html">Disclosure</a></li><li><a href="/privacy.html">Privacy</a></li></ul></div>
+    </div>
+    <p class="bxg-foot-copy"><span>&copy; 2026 Boxer Guide</span><span>boxer-guide.github.io</span></p>
+  </div>
+  <script>window.dataLayer=window.dataLayer||[];function bxgTrack(n,p){var e='bxg_name_'+n;window.dataLayer.push(Object.assign({event:e,site:'boxer-guide'},p||{}));if(window.gtag)window.gtag('event',e,p||{});}document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('[data-bxg-from]');if(a)bxgTrack('cta_click',{from:a.getAttribute('data-bxg-from')});});</script>
+</footer>
+<script>(function(){
+var URLP='https://boxer-guide.github.io/boxer-name-generator.html',NAMES=[["Rocky","m","champ"],["Champ","m","champ"],["Ace","u","champ"],["Blitz","m","champ"],["Dash","u","champ"],["Bolt","m","champ"],["Jab","m","champ goofy"],["Hook","m","champ"],["Rebel","u","champ"],["Maverick","m","champ"],["Ringo","m","champ"],["Knox","m","champ mighty"],["Ryder","m","champ"],["Jett","u","champ"],["Victory","f","champ"],["Jinx","f","champ goofy"],["Nova","f","champ"],["Scout","u","champ"],["Rio","u","champ"],["Zola","f","champ"],["Kiki","f","champ goofy"],["Sky","f","champ"],["Winnie","f","champ classic"],["Indy","u","champ"],["Max","m","classic"],["Duke","m","classic"],["Buddy","m","classic"],["Charlie","u","classic"],["Jack","m","classic"],["Oscar","m","classic"],["Teddy","m","classic"],["Louie","m","classic"],["Murphy","m","classic"],["Winston","m","classic"],["Bentley","m","classic"],["Henry","m","classic"],["Gus","m","classic"],["Bella","f","classic"],["Daisy","f","classic"],["Lucy","f","classic"],["Molly","f","classic"],["Stella","f","classic"],["Ruby","f","classic"],["Rosie","f","classic"],["Lola","f","classic"],["Maggie","f","classic"],["Sadie","f","classic"],["Penny","f","classic"],["Ellie","f","classic"],["Biscuit","u","foodie"],["Brisket","m","foodie"],["Meatball","m","foodie goofy"],["Nacho","m","foodie"],["Pretzel","u","foodie"],["Waffles","u","foodie goofy"],["Peanut","u","foodie"],["Mocha","f","foodie brindle"],["Cookie","f","foodie"],["Olive","f","foodie"],["Pepper","f","foodie"],["Maple","f","foodie fawn"],["Toffee","u","foodie fawn"],["Bagel","m","foodie"],["Taco","m","foodie"],["Gnocchi","u","foodie goofy"],["Ginger","f","foodie fawn"],["Nutmeg","f","foodie"],["Hazel","f","foodie classic"],["Tank","m","mighty"],["Titan","m","mighty"],["Brutus","m","mighty"],["Atlas","m","mighty"],["Moose","m","mighty goofy"],["Diesel","m","mighty"],["Hercules","m","mighty"],["Goliath","m","mighty"],["Bear","m","mighty"],["Zeus","m","mighty"],["Odin","m","mighty"],["Thor","m","mighty"],["Athena","f","mighty"],["Freya","f","mighty"],["Storm","u","mighty"],["Raven","f","mighty"],["Valkyrie","f","mighty"],["Xena","f","mighty"],["Wiggles","u","goofy"],["Bounce","u","goofy champ"],["Zoomie","u","goofy"],["Pickles","u","goofy foodie"],["Noodle","u","goofy foodie"],["Doodle","u","goofy"],["Bingo","m","goofy"],["Boomer","m","goofy"],["Ziggy","u","goofy"],["Wally","m","goofy"],["Pudding","u","goofy foodie"],["Bubbles","f","goofy"],["Sprocket","m","goofy"],["Tater","m","goofy foodie"],["Fizz","f","goofy"],["Pogo","u","goofy"],["Fritz","m","german"],["Otto","m","german"],["Hans","m","german"],["Klaus","m","german"],["Bruno","m","german mighty"],["Kaiser","m","german mighty"],["Wolfgang","m","german"],["Ludwig","m","german"],["Anton","m","german"],["Heidi","f","german"],["Greta","f","german"],["Frieda","f","german"],["Liesel","f","german"],["Gretel","f","german"],["Lotte","f","german"],["Elke","f","german"],["Anja","f","german"],["Klara","f","german"],["Honey","f","fawn"],["Caramel","u","fawn foodie"],["Copper","m","fawn"],["Rusty","m","fawn"],["Amber","f","fawn"],["Sunny","u","fawn"],["Butterscotch","u","fawn foodie"],["Cinnamon","f","fawn foodie"],["Sandy","u","fawn"],["Goldie","f","fawn"],["Tiger","m","brindle"],["Stripes","u","brindle"],["Marble","u","brindle"],["Shadow","m","brindle"],["Smokey","m","brindle"],["Ember","f","brindle"],["Bramble","u","brindle"],["Tabby","f","brindle"],["Domino","u","brindle white"],["Flash","u","white champ"],["Blaze","u","white"],["Socks","u","white goofy"],["Patch","u","white"],["Bandit","m","white"],["Snowy","f","white"],["Star","f","white"],["Tux","m","white"],["Pearl","f","white"]],TAGS=["Professional zoomie athlete", "Undefeated couch champion", "Born to bounce", "Heavyweight of cuddles", "Wiggle-butt MVP", "Captain of the morning walk", "Fetch league all-star", "Certified good sport"],LABEL={"champ": "Champion", "classic": "Classic", "foodie": "Foodie", "mighty": "Mighty", "goofy": "Goofy", "german": "German classics", "coat": "Coat colour"},KEY='bxg-shortlist';
+var FMT={square:[1080,1080],portrait:[1080,1350],story:[1080,1920]};
+var TH={red:{bg:'#ff1f1f',ink:'#0d0d0d',acc:'#0d0d0d',num:'rgba(13,13,13,.30)',dot:'rgba(13,13,13,.17)',rule:'#0d0d0d'},
+ black:{bg:'#0d0d0d',ink:'#ffffff',acc:'#ff1f1f',num:'rgba(255,31,31,.55)',dot:'rgba(255,255,255,.09)',rule:'#ff1f1f'},
+ paper:{bg:'#f2eee5',ink:'#0d0d0d',acc:'#b3001b',num:'rgba(179,0,27,.34)',dot:'rgba(13,13,13,.09)',rule:'#0d0d0d'}};
+var COAT={fawn:['#c9874c','#a96a35'],brindle:['#8c5a2e','#2b1a10']};
+var form=document.getElementById('bxg-form'),status=document.getElementById('bxg-status'),lineup=document.getElementById('bxg-lineup'),
+picks=document.getElementById('bxg-picks'),studio=document.getElementById('bxg-studio'),canvas=document.getElementById('bxg-card'),
+cf=document.getElementById('bxg-card-form'),cstatus=document.getElementById('bxg-card-status'),keepBox=document.getElementById('bxg-keep'),
+keepList=document.getElementById('bxg-keep-list'),linkBox=document.getElementById('bxg-link-box'),linkOut=document.getElementById('bxg-link'),
+shareBtn=document.getElementById('bxg-share'),used=false,last=[],source='lineup';
+function use(){if(!used){used=true;bxgTrack('use');}}
+function num(n){var s=0,l=n.toLowerCase();for(var i=0;i<l.length;i++)s+=l.charCodeAt(i)*(i+1);return s%99+1;}
+function rng(a){return function(){a|=0;a=a+0x6D2B79F5|0;var t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296;};}
+function el(tag,cls,text){var e=document.createElement(tag);if(cls)e.className=cls;if(text!=null)e.textContent=text;return e;}
+function clean(s){return String(s||'').replace(/[^A-Za-z\u00C0-\u024F' .-]/g,'').replace(/\s+/g,' ').trim().slice(0,14);}
+function read(){var f=new FormData(form);return{sex:f.get('sex'),styles:f.getAll('style'),coat:f.get('coat'),marks:!!f.get('marks'),
+ letter:f.get('letter')||'',len:f.get('len')};}
+function pool(o){return NAMES.filter(function(r){var n=r[0],t=r[2].split(' ');
+ if(o.sex!=='any'&&r[1]!==o.sex&&r[1]!=='u')return false;
+ if(o.letter&&n.charAt(0).toUpperCase()!==o.letter)return false;
+ if(o.len==='short'&&n.length>5)return false;if(o.len==='long'&&n.length<6)return false;
+ return o.styles.some(function(s){if(s==='coat')return t.indexOf(o.coat)>=0||(o.marks&&t.indexOf('white')>=0);return t.indexOf(s)>=0;});});}
+function styleOf(r,o){var t=r[2].split(' ');for(var i=0;i<o.styles.length;i++){var s=o.styles[i];
+ if(s==='coat'&&(t.indexOf(o.coat)>=0||(o.marks&&t.indexOf('white')>=0)))return LABEL.coat;if(t.indexOf(s)>=0)return LABEL[s];}return '';}
+function kept(){try{var v=JSON.parse(localStorage.getItem(KEY)||'[]');return Array.isArray(v)?v.filter(function(x){return typeof x==='string';}).map(clean).filter(Boolean).slice(0,12):[];}catch(e){return[];}}
+function saveKept(v){try{localStorage.setItem(KEY,JSON.stringify(v.slice(0,12)));}catch(e){}}
+function draw8(o,track){if(!o.styles.length){status.textContent='Pick at least one style.';status.classList.add('bxg-error');return;}
+ var p=pool(o),r=rng(Date.now()^Math.floor(Math.random()*1e9));
+ if(!p.length){status.textContent='No names match. Remove the first letter, change the length, or add a style.';status.classList.add('bxg-error');return;}
+ status.classList.remove('bxg-error');
+ for(var i=p.length-1;i>0;i--){var j=Math.floor(r()*(i+1)),x=p[i];p[i]=p[j];p[j]=x;}
+ last=p.slice(0,8);render(o);
+ status.textContent=p.length<8?'Only '+p.length+' names match these settings. Remove the first letter or add a style for more.':
+  'Eight names from '+p.length+' that match. Shuffle again for a new line-up.';
+ if(track)bxgTrack('generate',{sex:o.sex,styles:o.styles.join(','),letter:o.letter||'any',len:o.len,matches:p.length});}
+function render(o){picks.replaceChildren();var k=kept();
+ last.forEach(function(r){var n=r[0],li=el('li'),j=el('span','bxg-jersey');j.appendChild(el('span','bxg-jersey-no',String(num(n))));
+  j.appendChild(el('strong','',n));j.appendChild(el('small','',styleOf(r,o)));li.appendChild(j);
+  var t=el('div','bxg-pick-tools'),m=el('button','bxg-make','Make card'),s=el('button','bxg-star',k.indexOf(n)>=0?'Kept':'Keep');
+  m.type='button';s.type='button';m.setAttribute('data-name',n);s.setAttribute('data-name',n);
+  m.setAttribute('aria-label','Make a name card for '+n);s.setAttribute('aria-pressed',k.indexOf(n)>=0?'true':'false');
+  s.setAttribute('aria-label','Keep '+n+' on the shortlist');t.appendChild(m);t.appendChild(s);li.appendChild(t);picks.appendChild(li);});
+ lineup.hidden=false;}
+function renderKept(){var k=kept();keepList.replaceChildren();keepBox.hidden=!k.length;
+ k.forEach(function(n){var li=el('li'),a=el('button','bxg-kc',n),x=el('button','bxg-kx','\u00d7');a.type='button';x.type='button';
+  a.setAttribute('data-name',n);x.setAttribute('data-name',n);a.setAttribute('aria-label','Make a name card for '+n);
+  x.setAttribute('aria-label','Remove '+n+' from the shortlist');li.appendChild(a);li.appendChild(x);keepList.appendChild(li);});}
+function toggleKeep(n){var k=kept(),i=k.indexOf(n);if(i>=0)k.splice(i,1);else{if(k.length>=12){status.textContent='The shortlist holds 12 names. Remove one first.';return;}k.push(n);}
+ saveKept(k);renderKept();Array.prototype.forEach.call(picks.querySelectorAll('.bxg-star'),function(b){var on=k.indexOf(b.getAttribute('data-name'))>=0;
+  b.setAttribute('aria-pressed',on?'true':'false');b.textContent=on?'Kept':'Keep';});}
+function state(){var f=new FormData(cf),n=clean(f.get('name')),no=parseInt(f.get('no'),10);
+ return{n:n,no:isFinite(no)&&no>=0&&no<=99?no:num(n||'boxer'),t:Math.min(TAGS.length-1,Math.max(0,+f.get('tag')||0)),th:TH[f.get('th')]?f.get('th'):'red',
+  f:FMT[f.get('f')]?f.get('f'):'portrait',c:COAT[f.get('coat')]?f.get('coat'):'fawn',m:f.get('marks')?1:0,y:/^20\d\d$/.test(f.get('year')||'')?f.get('year'):''};}
+function setState(s){cf.name.value=s.n;cf.no.value=s.no;cf.tag.value=String(s.t);cf.th.value=s.th;cf.f.value=s.f;cf.coat.value=s.c;cf.marks.checked=!!s.m;cf.year.value=s.y||'';}
+function link(s){var q=new URLSearchParams({n:s.n,no:String(s.no),t:String(s.t),th:s.th,f:s.f,c:s.c,m:String(s.m)});if(s.y)q.set('y',s.y);return URLP+'#'+q.toString();}
+function fit(x,text,max,size,min){x.font='400 '+size+'px Anton, Impact, sans-serif';while(size>min&&x.measureText(text).width>max){size-=4;x.font='400 '+size+'px Anton, Impact, sans-serif';}return size;}
+function spaced(x,v){if('letterSpacing' in x)x.letterSpacing=v;}
+function draw(){var s=state(),D=FMT[s.f],W=D[0],H=D[1],T=TH[s.th],x=canvas.getContext('2d'),B=Math.min(H,Math.round(W*1.25)),oy=Math.round((H-B)/2),M=72,r=rng(num(s.n||'boxer')*7919);
+ canvas.width=W;canvas.height=H;x.textBaseline='alphabetic';spaced(x,'0px');
+ x.fillStyle=T.bg;x.fillRect(0,0,W,H);
+ x.fillStyle=T.dot;for(var yy=18;yy<H*.5;yy+=30)for(var xx=W*.38;xx<W+20;xx+=30){var d=((xx-W*.38)/(W*.62))*(1-yy/(H*.5))*11;if(d>.8){x.beginPath();x.arc(xx,yy,d,0,6.2832);x.fill();}}
+ x.fillStyle='#ff1f1f';x.fillRect(0,0,W,30);x.fillRect(0,H-30,W,30);x.fillStyle='#0d0d0d';
+ for(var k=-44;k<W+44;k+=44)[0,H-30].forEach(function(t){x.beginPath();x.moveTo(k+22,t);x.lineTo(k+44,t);x.lineTo(k+22,t+30);x.lineTo(k,t+30);x.closePath();x.fill();});
+ var no=String(s.no);x.save();x.font='400 '+Math.round(B*.62)+'px Anton, Impact, sans-serif';x.textAlign='right';x.lineWidth=7;x.strokeStyle=T.num;x.strokeText(no,W-M+10,oy+B*.58);x.restore();
+ x.fillStyle=T.acc;x.font='800 34px Barlow, Arial, sans-serif';spaced(x,'6px');x.fillText('MEET THE NEWEST BOXER',M,oy+B*.1+30);spaced(x,'0px');
+ x.fillStyle=T.ink;x.font='400 76px Anton, Impact, sans-serif';x.fillText('No. '+(s.no<10?'0':'')+s.no,M,oy+B*.1+122);
+ var by=oy+B*.62,bh=B*.11,sk=W*.05,name=(s.n||'Your Boxer').toUpperCase(),size=fit(x,name,W-2*M,Math.round(B*.26),60);
+ x.fillStyle=T.ink;x.fillText(name,M,by-sk-18);
+ x.save();x.beginPath();x.moveTo(0,by+sk);x.lineTo(W,by-sk);x.lineTo(W,by-sk+bh);x.lineTo(0,by+sk+bh);x.closePath();x.clip();
+ var C=COAT[s.c];x.fillStyle=C[0];x.fillRect(0,by-sk-4,W,bh+2*sk+8);
+ if(s.c==='brindle'){x.strokeStyle=C[1];for(var bx=-80;bx<W+80;bx+=14+r()*26){x.lineWidth=3+r()*7;x.beginPath();x.moveTo(bx,by-sk-10);x.lineTo(bx-30-r()*30,by+sk+bh+10);x.stroke();}}
+ if(s.m){x.fillStyle='#ffffff';x.beginPath();x.moveTo(W*.44,by-sk);x.lineTo(W*.56,by-sk);x.lineTo(W*.5,by+sk+bh);x.closePath();x.fill();}
+ x.restore();x.strokeStyle=T.rule;x.lineWidth=6;x.beginPath();x.moveTo(0,by+sk);x.lineTo(W,by-sk);x.moveTo(0,by+sk+bh);x.lineTo(W,by-sk+bh);x.stroke();
+ x.fillStyle=T.ink;x.font='800 40px Barlow, Arial, sans-serif';spaced(x,'3px');x.fillText(TAGS[s.t].toUpperCase(),M,by+sk+bh+84,W-2*M);spaced(x,'0px');
+ x.fillStyle=T.rule;x.fillRect(M,oy+B*.9,W-2*M,4);x.fillStyle=T.ink;x.font='800 30px Barlow, Arial, sans-serif';spaced(x,'4px');
+ x.fillText(s.y?'EST. '+s.y:(s.c==='brindle'?'BRINDLE':'FAWN')+(s.m?' & WHITE':''),M,oy+B*.9+52);x.textAlign='right';spaced(x,'1px');
+ x.font='600 30px Barlow, Arial, sans-serif';x.fillText('boxer-guide.github.io',W-M,oy+B*.9+52);x.textAlign='left';spaced(x,'0px');
+ canvas.setAttribute('aria-label','Name card: '+name+', number '+s.no+', '+TAGS[s.t]+(s.y?', est. '+s.y:''));
+ document.getElementById('bxg-preview').className='bxg-preview bxg-fmt-'+s.f;
+ linkOut.value=link(s);return s;}
+function ready(){return document.fonts&&document.fonts.load?Promise.all([document.fonts.load('400 80px Anton'),document.fonts.load('800 30px Barlow'),document.fonts.load('600 30px Barlow')]).catch(function(){}):Promise.resolve();}
+function open(n,src){use();source=src;setState({n:n,no:num(n),t:Math.floor(Math.random()*TAGS.length),th:cf.th.value||'red',f:cf.f.value||'portrait',
+ c:form.coat.value||'fawn',m:form.marks.checked?1:0,y:cf.year.value||''});studio.hidden=false;ready().then(draw);
+ cstatus.textContent='Card ready for '+n+'. Change the number, tagline or colours, then download it.';bxgTrack('card',{source:src});
+ var h=document.getElementById('bxg-studio-h');h.focus({preventScroll:true});studio.scrollIntoView({behavior:'smooth',block:'start'});}
+function slug(n){return (n||'boxer').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'')||'boxer';}
+function blob(){return new Promise(function(res){canvas.toBlob(res,'image/png');});}
+form.addEventListener('change',use);
+form.addEventListener('submit',function(e){e.preventDefault();use();draw8(read(),true);});
+document.getElementById('bxg-shuffle').addEventListener('click',function(){use();draw8(read(),true);});
+picks.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;use();var n=b.getAttribute('data-name');
+ if(b.classList.contains('bxg-make'))open(n,'lineup');else toggleKeep(n);});
+keepList.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;use();var n=b.getAttribute('data-name');
+ if(b.classList.contains('bxg-kc'))open(n,'shortlist');else toggleKeep(n);});
+document.getElementById('bxg-own').addEventListener('click',function(){open('', 'typed');cstatus.textContent='Type your Boxer\'s name to make the card.';cf.name.focus();});
+cf.addEventListener('input',function(){use();draw();});cf.addEventListener('change',function(){use();draw();});
+cf.addEventListener('submit',function(e){e.preventDefault();});
+document.getElementById('bxg-download').addEventListener('click',function(){var s=draw();if(!s.n){cstatus.textContent='Type a name first.';cf.name.focus();return;}
+ blob().then(function(b){var u=URL.createObjectURL(b),a=document.createElement('a');a.href=u;a.download='boxer-name-card-'+slug(s.n)+'.png';
+  document.body.appendChild(a);a.click();setTimeout(function(){URL.revokeObjectURL(u);a.remove();},1500);});
+ cstatus.textContent='Card downloaded as a PNG image.';bxgTrack('convert',{action:'download',theme:s.th,format:s.f,source:source});});
+if(navigator.canShare&&window.File){shareBtn.hidden=false;}
+shareBtn.addEventListener('click',function(){var s=draw();if(!s.n){cstatus.textContent='Type a name first.';cf.name.focus();return;}
+ blob().then(function(b){var file=new File([b],'boxer-name-card-'+slug(s.n)+'.png',{type:'image/png'}),d={files:[file],title:'Meet '+s.n,text:'Meet '+s.n+', our Boxer.',url:link(s)};
+  if(!navigator.canShare(d)){delete d.files;}return navigator.share(d).then(function(){cstatus.textContent='Card shared.';bxgTrack('convert',{action:'share',theme:s.th,format:s.f,source:source});});
+ }).catch(function(){cstatus.textContent='Sharing was cancelled. You can download the card instead.';});});
+document.getElementById('bxg-copy').addEventListener('click',function(){var s=draw();if(!s.n){cstatus.textContent='Type a name first.';cf.name.focus();return;}
+ linkBox.hidden=false;var u=link(s);linkOut.value=u;
+ function done(ok){cstatus.textContent=ok?'Link copied. Anyone who opens it sees this card.':'Copy the link below. Anyone who opens it sees this card.';
+  bxgTrack('convert',{action:'copy_link',theme:s.th,format:s.f,source:source});}
+ if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(u).then(function(){done(true);},function(){linkOut.select();done(false);});else{linkOut.select();done(false);}});
+var q=new URLSearchParams(location.hash.slice(1)),preset=!!clean(q.get('n')),shared=preset&&q.get('from')!=='home';
+renderKept();draw8(read(),false);
+if(preset){var n=clean(q.get('n')),no=parseInt(q.get('no'),10);
+ setState({n:n,no:isFinite(no)&&no>=0&&no<=99?no:num(n),t:Math.min(TAGS.length-1,Math.max(0,parseInt(q.get('t'),10)||0)),th:TH[q.get('th')]?q.get('th'):'red',
+  f:FMT[q.get('f')]?q.get('f'):'portrait',c:COAT[q.get('c')]?q.get('c'):'fawn',m:q.get('m')==='1'?1:0,y:/^20\d\d$/.test(q.get('y')||'')?q.get('y'):''});
+ studio.hidden=false;document.getElementById('bxg-shared').hidden=!shared;source=shared?'shared':'home';ready().then(function(){draw();studio.scrollIntoView({block:'start'});});
+ cstatus.textContent=shared?'This is the card that was shared with you. Change anything to make it yours.':'Card ready for '+n+'. Change the number, tagline or colours, then download it.';}
+bxgTrack('view',{shared:shared,preset:preset});
+if(preset)bxgTrack('card',{source:source});
+})();</script>
+</body>
+</html>
